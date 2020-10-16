@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/indexFragment"
+        android:icon="@drawable/ic_home_24"
+        android:title="Home"
+        android:checked="true"
+        app:labelVisibilityMode="labeled"
+        android:iconTint="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/userProfilePFragment"
+        android:icon="@drawable/ic_user_24"
+        android:title="Profile"
+        app:labelVisibilityMode="labeled"
+        android:iconTint="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/fragmentPostCar"
+        android:icon="@drawable/ic_add_24"
+        android:title="Sell"
+        app:labelVisibilityMode="labeled"
+        android:iconTint="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/searchCarFragment"
+        android:icon="@drawable/ic_search_24"
+        android:title="Search"
+        app:labelVisibilityMode="labeled"
+        android:iconTint="@color/colorPrimary"/>
+</menu>

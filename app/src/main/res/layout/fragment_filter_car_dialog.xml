@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.home.listCar.views.FilterCarDialogFragment">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/MaterialCardViewInputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:drawableEnd="@drawable/ic_filter_24"
+                    style="@style/textStyleCardViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Filter Cars"/>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/carMakeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_add_white_24"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text="Make"
+                    android:textAllCaps="false"
+                    app:cornerRadius="5dp" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/carModelButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_add_white_24"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text="Model"
+                    android:textAllCaps="false"
+                    app:cornerRadius="5dp" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/carYearButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_add_white_24"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text="Year"
+                    android:textAllCaps="false"
+                    app:cornerRadius="5dp" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/carBodyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_add_white_24"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text="Body"
+                    android:textAllCaps="false"
+                    app:cornerRadius="5dp" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/carConditionButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_add_white_24"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="5dp"
+                    android:text="Condition"
+                    android:textAllCaps="false"
+                    app:cornerRadius="5dp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonCancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorPrimaryTransparent"
+                        android:drawableEnd="@drawable/ic_cancel_24"
+                        android:fontFamily="@font/montserrat"
+                        android:padding="2dp"
+                        android:text="@string/cancel"
+                        android:textAllCaps="false"
+                        app:cornerRadius="5dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonFilter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorPrimaryTransparent"
+                        android:drawableEnd="@drawable/ic_filter_24"
+                        android:fontFamily="@font/montserrat"
+                        android:padding="2dp"
+                        android:text="@string/filter"
+                        android:textAllCaps="false"
+                        app:cornerRadius="5dp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</layout>

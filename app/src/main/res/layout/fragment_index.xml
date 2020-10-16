@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/colorPrimary"
+    android:layout_marginBottom="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.listCar.views.IndexFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <FrameLayout
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager_image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/featured"
+                android:text="Featured"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="20dp"
+                style="@style/textStyle"
+                android:layout_gravity="end"
+                android:background="@drawable/button_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/MaterialCardViewStyle"
+                    app:cardElevation="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/textStyleCardViewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="View By Vehicle Condition"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3">
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="2dp"
+                            android:gravity="start">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/foreign_used_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableEnd="@drawable/ic_view_list_24"
+                            android:text="Foreign Used" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="2dp"
+                            android:gravity="center">
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/locally_used_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableEnd="@drawable/ic_view_list_24"
+                                android:text="Locally Used" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="2dp"
+                            android:gravity="end">
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/brand_new_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableEnd="@drawable/ic_view_list_24"
+                                android:text="Brand New" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/MaterialCardViewStyle"
+                    app:cardElevation="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            style="@style/textStyleCardViewTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View By Vehicle Type"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorPrimary" />
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/all_vehicles"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_car_front"
+                                    android:tooltipText="Car" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="All Cars" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/saloons_vehicles"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_car"
+                                    android:tooltipText="Car" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Saloons" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/hatchbacks_vehicles"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_car_hatchback"
+                                    android:tooltipText="Car" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hatchback" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/wagons_vehicles"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_wagon"
+                                    android:tooltipText="Car" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Station Wagon" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/suv_vehicles"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_suv"
+                                    android:tooltipText="Car" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="SUV" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/van_vehicles"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_microbus"
+                                    android:tooltipText="Car" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Van And Buses" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/truck_vehicles"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_truck"
+                                    android:tooltipText="Car" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Trucks and Trailers" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/machinery_vehicles"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_tractor"
+                                    android:tooltipText="Car" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tractors and Machinery" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/motorcycles"
+                                    android:layout_width="55dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_motorcycle"
+                                    android:tooltipText="Car" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Motorcycles"/>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/MaterialCardViewStyle"
+                    app:cardElevation="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/textStyleCardViewTitle"
+                            android:layout_marginTop="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="View By Popular Brand"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorPrimary" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/toyota"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_toyota"
+                                        android:tooltipText="Car" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Toyota" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/nissan"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_nissan"
+                                        android:tooltipText="Car" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nissan" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/subaru"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_subaru"
+                                        android:tooltipText="Subaru" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Subaru" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/honda"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_honda"
+                                        android:tooltipText="Car" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Honda" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/mitsubishi"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_mitsubishi"
+                                        android:tooltipText="Car" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mitsubishi" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/mercedes"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_mercedes_benz"
+                                        android:tooltipText="Car" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mercedes" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/mazda"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_mazda"
+                                        android:tooltipText="Mazda" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mazda" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/volkswagen"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_volkswagen"
+                                        android:tooltipText="Car" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Volkswagen" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/bmw"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_bmw"
+                                        android:tooltipText="Car" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="BMW" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/landRover"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_land_rover"
+                                    android:tooltipText="Land Rover" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Land Rover" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/isuzu"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_isuzu"
+                                    android:tooltipText="Isuzu" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Isuzu" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/audi"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_audi"
+                                    android:tooltipText="Audi" />
+                                <TextView
+                                    style="@style/textStyleCardView"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Audi" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/MaterialCardViewStyle"
+                    app:cardElevation="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical">
+                            <TextView
+                                style="@style/textStyleCardViewTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="View By Location"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimary" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/nairobi"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_location_24"
+                                        android:tint="@color/colorPrimary"
+                                        android:tooltipText="Car" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nairobi" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/mombasa"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_location_24"
+                                        android:tint="@color/colorPrimary" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mombasa" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/nakuru"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_location_24"
+                                        android:tint="@color/colorPrimary" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nakuru" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/eldoret"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_location_24"
+                                        android:tint="@color/colorPrimary" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Eldoret" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/otherLocations"
+                                        android:layout_width="50dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/ic_location_24"
+                                        android:tint="@color/colorPrimary" />
+                                    <TextView
+                                        style="@style/textStyleCardView"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Other Locations" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                </com.google.android.material.card.MaterialCardView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+        <com.agrawalsuneet.dotsloader.loaders.PullInLoader
+            android:visibility="invisible"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:pullin_bigCircleRadius="50dp"
+            app:pullin_dotsRadius="8dp"
+            app:pullin_useMultipleColors="true"
+            app:pullin_colorsArray="@array/rainbow"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

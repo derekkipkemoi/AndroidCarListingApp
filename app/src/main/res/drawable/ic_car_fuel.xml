@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <path
+      android:pathData="M496,464L496,448a8,8 0,0 0,-8 -8L488,256a8,8 0,0 0,-8 -8L352,248a8,8 0,0 0,-8 8L344,408L320,408L320,384h8a8,8 0,0 0,8 -8L336,280a8,8 0,0 0,-8 -8L304,272a8,8 0,0 0,-8 8v24a8,8 0,0 0,-8 8v64a8,8 0,0 0,8 8h8v32a8,8 0,0 0,8 8h32v16a8,8 0,0 0,-8 8v16L304,464L304,448a8,8 0,0 0,-8 -8L280,440L280,128h16a8,8 0,0 0,8 -8L304,104L480,104a8,8 0,0 0,8 -8L488,32a8,8 0,0 0,-8 -8L32,24a8,8 0,0 0,-8 8L24,96a8,8 0,0 0,8 8L208,104v16a8,8 0,0 0,8 8h16L232,440L216,440a8,8 0,0 0,-8 8v16L176,464L176,448a8,8 0,0 0,-8 -8L168,424h32a8,8 0,0 0,8 -8L208,384h8a8,8 0,0 0,8 -8L224,312a8,8 0,0 0,-8 -8L216,280a8,8 0,0 0,-8 -8L184,272a8,8 0,0 0,-8 8v96a8,8 0,0 0,8 8h8v24L168,408L168,256a8,8 0,0 0,-8 -8L32,248a8,8 0,0 0,-8 8L24,440a8,8 0,0 0,-8 8v16a8,8 0,0 0,0 16L496,480a8,8 0,0 0,0 -16ZM312,288h8v16h-8ZM304,368L304,320h16v48ZM192,288h8v16h-8ZM192,320h16v48L192,368ZM40,264L152,264L152,392L40,392ZM40,408L152,408v32L40,440ZM160,464L32,464v-8L160,456ZM40,88L40,40L472,40L472,88ZM224,112v-8h64v8ZM264,128L264,440L248,440L248,128ZM288,464L224,464v-8h64ZM360,264L472,264L472,392L360,392ZM360,408L472,408v32L360,440ZM480,464L352,464v-8L480,456Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="471.283"
+          android:startX="44.717"
+          android:endY="-9.302"
+          android:endX="525.302"
+          android:type="linear">
+        <item android:offset="0" android:color="#FF003F8A"/>
+        <item android:offset="0.518" android:color="#FF00D7DF"/>
+        <item android:offset="1" android:color="#FF006DF0"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M56,336h80a8,8 0,0 0,8 -8L144,280a8,8 0,0 0,-8 -8L56,272a8,8 0,0 0,-8 8v48A8,8 0,0 0,56 336ZM64,288h64v32L64,320Z">
+  </path>
+  <path
+      android:pathData="M376,336h80a8,8 0,0 0,8 -8L464,280a8,8 0,0 0,-8 -8L376,272a8,8 0,0 0,-8 8v48A8,8 0,0 0,376 336ZM384,288h64v32L384,320Z">
+  </path>
+</vector>

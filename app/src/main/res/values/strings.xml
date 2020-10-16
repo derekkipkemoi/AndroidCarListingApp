@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Moti</string>
+    <string name="search">search</string>
+    <string name="content_description_search">content_description_search</string>
+    <string name="content_description_more">content_description_more</string>
+    <string name="more">more</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="web_client_id">751626606453-a7b8jker5h29f577d5l0f239mosdhdlm.apps.googleusercontent.com</string>
+    <string name="web_client_secret">S9jlEX2q-XNCyOqJsens53rV</string>
+    <string name="google_get_access_token_url">https://oauth2.googleapis.com/token</string>
+
+    <string name="facebook_app_id">296519711567547</string>
+    <string name="fb_login_protocol_scheme">fb296519711567547</string>
+    <string name="premiumText">Sell 100 times faster\n<br />Get Listed in Top Social Media Platforms\n<br />Get Featured In Moti kenya Web and Android Apps</string>
+    <string name="standardText">Sell 50 times faster\n<br />Get Featured In Moti kenya Web and Android Apps</string>
+    <string name="standard">Select Silver Package</string>
+    <string name="premium">Select Gold Package</string>
+    <string name="choose_package">Choose A Package</string>
+    <string name="icon">ICON</string>
+    <string name="feature">Sell Faster</string>
+    <string name="sold">Sold</string>
+    <string name="delete">Delete</string>
+    <string name="filter_cars">Filter Cars</string>
+    <string name="filter">Filter</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="admob_app_id">ca-app-pub-5055471902948946~3647468956</string>
+    <string name="ad_unit_id">ca-app-pub-5055471902948946/4852739411</string>
+    <string name="close_drawer">Clower Navigation</string>
+    <string name="open_drawer">Open Navigation</string>
+</resources>

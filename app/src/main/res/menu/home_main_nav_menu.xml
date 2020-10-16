@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_24"
+        android:iconTint="@color/warningYellow"
+        android:title="Search | Filter"
+        android:contentDescription="@string/content_description_search"
+        app:showAsAction="ifRoom"/>
+<item android:title="Communicate">
+    <menu>
+        <item
+            android:id="@+id/rate"
+            android:icon="@drawable/ic_star_24"
+            android:title="Rate us"
+            android:contentDescription="@string/content_description_search"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_share_24"
+            android:title="Share Moti Kenya App"
+            android:contentDescription="@string/content_description_more"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/privacy_policy"
+            android:icon="@drawable/privacy_policy"
+            android:title="Privacy Policy"
+            android:contentDescription="@string/content_description_more"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/terms_and_conditions"
+            android:icon="@drawable/terms_and_conditions"
+            android:title="Terms and Conditions"
+            android:contentDescription="@string/content_description_more"
+            app:showAsAction="never"/>
+    </menu>
+</item>
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "751626606453",
+    "firebase_url": "https://apiauthwithnode-285315.firebaseio.com",
+    "project_id": "apiauthwithnode-285315",
+    "storage_bucket": "apiauthwithnode-285315.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751626606453:android:a275ab3805067cc008653c",
+        "android_client_info": {
+          "package_name": "org.carlistingapp.listingcarsproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751626606453-so7at558hq07hhdrv20rg4cfcf3s99ju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.carlistingapp.listingcarsproject",
+            "certificate_hash": "073855b686532ef32b7228a4a3616bb38631461f"
+          }
+        },
+        {
+          "client_id": "751626606453-ncrp7hforhmd9tjrc7vippvlttapvslu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvpILf1pCeJ2tuNsg0l6H2d-PqURLfaxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751626606453-ncrp7hforhmd9tjrc7vippvlttapvslu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

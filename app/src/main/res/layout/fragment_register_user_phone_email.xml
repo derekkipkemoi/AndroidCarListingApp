@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_background"
+                    style="@style/textStyleCardViewTitle"
+                    android:text="Register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/firstNameTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryTransparent"
+                    app:errorIconDrawable="@null">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_view_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="First Name"
+                        android:inputType="text"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/lastNameTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimaryTransparent"
+                    app:errorIconDrawable="@null">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_view_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Last Name"
+                        android:inputType="text"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:layout_constraintTop_toBottomOf="@+id/nameTextInputLayout"
+                    android:id="@+id/emailTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:errorIconDrawable="@null">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_view_email"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout"
+                    android:id="@+id/passwordTextInputLayout"
+                    android:layout_marginTop="10dp"
+                    app:passwordToggleEnabled="true"
+                    android:layout_width="match_parent"
+                    app:errorIconDrawable="@null"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_view_password"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Password"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout"
+                    android:id="@+id/confirmPasswordTextInputLayout"
+                    android:layout_marginTop="10dp"
+                    app:passwordToggleEnabled="true"
+                    android:layout_width="match_parent"
+                    app:errorIconDrawable="@null"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_view_confirm_password"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:id="@+id/button_signUp"
+                        app:icon="@drawable/ic_register_24"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Sign Up"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <ProgressBar
+                android:visibility="invisible"
+                android:layout_gravity="center"
+                android:id="@+id/progress_bar"
+                android:elevation="2dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

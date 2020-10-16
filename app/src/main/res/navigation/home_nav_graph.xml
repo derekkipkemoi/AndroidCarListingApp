@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    android:label="Settings"
+    app:startDestination="@id/indexFragment">
+    <fragment
+        android:id="@+id/fragmentPostCar"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.postCar.viewPager.PostCarViewPagerFragment"
+        android:label="Sell"
+        tools:layout="@layout/fragment_post_car_view_pager" />
+    <fragment
+        android:id="@+id/carDetailsFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.listCar.views.CarDetailsFragment"
+        android:label="Car Details"
+        tools:layout="@layout/fragment_car_details" />
+    <fragment
+        android:id="@+id/loginUserWithPhoneEmailFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.auth.views.LoginUserWithPhoneEmailFragment"
+        android:label="Log In"
+        tools:layout="@layout/fragment_login_user_phone_email" />
+    <fragment
+        android:id="@+id/registerUserPhoneEmailFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.auth.views.RegisterUserPhoneEmailFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_register_user_phone_email" />
+    <fragment
+        android:id="@+id/userProfilePFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.profile.views.UserProfilePFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.profile.views.SettingsFragment"
+        android:label="Profile Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/signInUserFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.auth.views.SignInUserFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_sign_in_user" />
+    <fragment
+        android:id="@+id/phoneNumberFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.profile.views.PhoneNumberFragment"
+        android:label="Verify Phone Number"
+        tools:layout="@layout/fragment_phone_number" />
+    <fragment
+        android:id="@+id/verifyPhoneCodeFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.profile.views.VerifyPhoneCodeFragment"
+        android:label="Verify Phone Number Code"
+        tools:layout="@layout/fragment_verify_phone_code" />
+    <fragment
+        android:id="@+id/userCarsFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.profile.views.UserCarsFragment"
+        android:label="Manage Ads"
+        tools:layout="@layout/fragment_user_cars" />
+    <fragment
+        android:id="@+id/userCarDetailsFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.profile.views.UserCarDetailsFragment"
+        android:label="User Car"
+        tools:layout="@layout/fragment_user_car_details" />
+    <fragment
+        android:id="@+id/searchCarFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.listCar.views.SearchCarFragment"
+        android:label="Search Moti"
+        tools:layout="@layout/fragment_search_car" />
+    <fragment
+        android:id="@+id/indexFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.listCar.views.IndexFragment"
+        android:label="Moti"
+        tools:layout="@layout/fragment_index" />
+    <fragment
+        android:id="@+id/listCarFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.listCar.views.ListCarFragment"
+        android:label="ListCarFragment"
+        tools:layout="@layout/fragment_list_cars" />
+    <fragment
+        android:id="@+id/viewImageFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.listCar.views.ViewImageFragment"
+        android:label="ViewImageFragment"
+        tools:layout="@layout/fragment_view_image" />
+    <fragment
+        android:id="@+id/featureCarFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.profile.views.FeatureCarFragment"
+        android:label="Feature Car"
+        tools:layout="@layout/fragment_feature_car" />
+    <fragment
+        android:id="@+id/filterCarsFragment"
+        android:name="org.carlistingapp.listingcarsproject.ui.home.listCar.views.FilterCarsFragment"
+        android:label="Filtered Cars"
+        tools:layout="@layout/fragment_filter_cars" />
+</navigation>

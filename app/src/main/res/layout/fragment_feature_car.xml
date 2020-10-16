@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.profile.views.FeatureCarFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/textStyleProfileCardView"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/choose_package"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:gravity="center"
+                    style="@style/textStyleProfileCardView"
+                    android:textColor="@color/warningYellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GOLD PACKAGE"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_seal_24"
+                    android:contentDescription="@string/icon" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:gravity="center"
+                    style="@style/textStyleProfileCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PRIZE : KSH 3,000  (VAT INCLUDED)"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:gravity="center"
+                    style="@style/textStyleMoreDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/premiumText"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:drawableEnd="@drawable/ic_add_white_24"
+                    android:id="@+id/goldPackageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/premium" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/standardCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:gravity="center"
+                style="@style/textStyleProfileCardView"
+                android:textColor="@color/warningYellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SILVER PACKAGE"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_star_24"
+                android:contentDescription="@string/icon" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:gravity="center"
+                style="@style/textStyleProfileCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRIZE : KSH 1500  (VAT INCLUDED)"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:gravity="center"
+                style="@style/textStyleMoreDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/standardText"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:drawableEnd="@drawable/ic_add_white_24"
+                android:id="@+id/silverPackageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/standard" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/freePackageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LATER" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

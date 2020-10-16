@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/MaterialCardViewStyle"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageView_slider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:background="@color/colorPrimaryTransparent"
+                android:padding="5dp"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textStyle"
+                        android:id="@+id/car_textView_name_slider"
+                        tools:text="Car Name"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/textStyle"
+                        android:id="@+id/car_textView_price_slider"
+                        tools:text="Car Price"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_location_24"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textStyle"
+                        android:id="@+id/car_textView_location_slider"
+                        tools:text="Car Location"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/textStyleDescription"
+                        android:id="@+id/car_textView_price_negotiable_slider"
+                        tools:text=""/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

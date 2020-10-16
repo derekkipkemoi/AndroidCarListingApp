@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/MaterialCardViewStyle"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:background="@color/colorPrimaryTransparent"
+                android:padding="3dp"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textStyle"
+                        android:id="@+id/car_textView_name"
+                        tools:text="Car Name"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/textStyle"
+                        android:id="@+id/car_textView_price"
+                        tools:text="Car Price"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_location_24"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:gravity="bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textStyle"
+                        android:id="@+id/car_textView_location"
+                        tools:text="Car Location"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/textStyle"
+                        android:id="@+id/car_textView_price_negotiable"
+                        tools:text="Car Price Negotiable"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_edit"
+                        android:drawableEnd="@drawable/ic_edit_24"
+                        android:textAllCaps="false"
+                        android:layout_marginRight="2dp"
+                        android:backgroundTint="@color/colorPrimaryTransparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        app:cornerRadius="5dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Edit"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_feature"
+                        android:drawableEnd="@drawable/ic_seal_24"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="2dp"
+                        android:backgroundTint="@color/colorPrimaryTransparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        app:cornerRadius="5dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/feature"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_sold"
+                        android:drawableEnd="@drawable/ic_checked_24"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="2dp"
+                        android:backgroundTint="@color/colorPrimaryTransparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        app:cornerRadius="5dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/sold"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_delete"
+                        android:drawableEnd="@drawable/ic_delete_24"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/colorPrimaryTransparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        app:cornerRadius="5dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/delete"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
